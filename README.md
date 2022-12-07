@@ -17,3 +17,12 @@ mamba create -n cadet -c bioconda -c conda-forge mummer seqtk
 ```
 ./CADET.sh <fasta> <window size> <slide size>
 ```
+
+## Output Files
+| Output File | Description |
+| --- | --- |
+|`concat_IDs`|sequence ID of putative concatemeric reads (useful for `seqtk subseq file.fastq **concat_IDs** > conc.fastq` )|
+|`concat_count.tab`||
+|`coords (folder)`||
+|`short.txt`||
+|`stats.txt`||
