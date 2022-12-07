@@ -1,4 +1,4 @@
-# CADET
+# CADET v.0.1
 Concatemer by Amplification DEtection Tool V.0.1
 
 
