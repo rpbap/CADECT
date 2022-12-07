@@ -7,6 +7,12 @@ Whole Genome Amplification using multiple displacement amplification (MDA) somet
 ## How it works?
 ![CADET](https://user-images.githubusercontent.com/28576450/206311935-1010d792-fd71-467f-89ba-8f55dabafe9c.png)
 
+## Installation
+
+```
+mamba create -n cadet -c bioconda -c conda-forge mummer seqtk 
+```
+
 ## Usage
 ```
 ./CADET.sh <fasta> <window size> <slide size>
