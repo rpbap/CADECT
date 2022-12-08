@@ -15,9 +15,21 @@ Figure. Concatamer-Mediated Multiple Displacement Amplification. The principle o
   
 ### workflow
 
+<p align="center">
+
 ![CADET](https://user-images.githubusercontent.com/28576450/206311935-1010d792-fd71-467f-89ba-8f55dabafe9c.png)
 
-## Installation
+</p>
+
+###Instalation
+
+Software Requirements:
+
+Mummer v3.23
+
+Seqtk v1.3
+
+###conda (mamba) enviroment instalation
 
 ```
 mamba create -n cadet -c bioconda -c conda-forge mummer seqtk 
