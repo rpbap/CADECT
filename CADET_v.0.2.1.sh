@@ -249,6 +249,7 @@ rm $SAMPLE/windows*.fa
 rm input.fa
 rm nseq.txt
 rm $SAMPLE/conc_shortIDs
+rm $SAMPLE/concat_count.tab
 
 ## Move Alignments to folder
 
