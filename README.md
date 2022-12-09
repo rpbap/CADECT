@@ -74,8 +74,10 @@ Short sequences:                          1
 Number of non-concatemer detected:        3   -------> `# of non_Concatemer + short sequences`
 Number of putative concatemer detected:   1   
 Total number of Reads:                    4   
-### putative concatemers ###
+`###` putative concatemers `###`
+
 read_number     read_ID self_alignemts
+
 window_1  Long-sequence-one  3                -------> `read_number (useful for coords)` `read_name` `#_of_potential_concatemer_repeats`
 
 
