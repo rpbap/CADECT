@@ -20,7 +20,8 @@ It splits all reads in separate files to perform sliding windows with the user p
 
   <p align="center">
 
-![CADET](https://user-images.githubusercontent.com/28576450/206311935-1010d792-fd71-467f-89ba-8f55dabafe9c.png)
+<img width="500" height="500" alt="CADET_0 2 1" src="https://user-images.githubusercontent.com/28576450/206768044-3ed65ee6-b119-470c-bed7-a361d497efb4.png">
+
     
   </p>
 
