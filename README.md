@@ -1,5 +1,5 @@
-# CADET v.0.2
-Concatemer by Amplification DEtection Tool V.0.2
+# CADET v.0.2.1
+Concatemer by Amplification DEtection Tool V.0.2.1
 
 
 Whole Genome Amplification using multiple displacement amplification (MDA) sometimes can introduce potential false concatemer sequences that can affect whole genome assembly assays. Here we propose a Concatemer detection tool for those WGA assays.
@@ -39,7 +39,7 @@ mamba create -n cadet -c bioconda -c conda-forge mummer seqtk
 
 ## Usage
 ```
-../CADET_v.0.2.sh [OPTIONS] -R <Reads.fastq> -w <window size> -s <slide size> -p <your_prefix>
+../CADET_v.0.2.1.sh [OPTIONS] -R <Reads.fastq> -w <window size> -s <slide size> -p <your_prefix>
 
 Flag description:
 
