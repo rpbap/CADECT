@@ -3,7 +3,7 @@ function Usage()
 {
 cat <<-ENDOFMESSAGE
 #################################################################################
-##      CADET - Concatemer by Amplification DEtection Tool v0.2                ##
+##      CADET - Concatemer by Amplification DEtection Tool v0.2.1                ##
 ##                               Baptista, Rodrigo, 2022                       ##
 #################################################################################
 
@@ -255,4 +255,4 @@ rm $SAMPLE/conc_shortIDs
 mkdir $SAMPLE/coords
 mv $SAMPLE/*.coords $SAMPLE/coords/
 echo "> FINISHED!"
-echo "Thank you for Running CADET"
+echo "Thank you for Running CADET v0.2.1"
