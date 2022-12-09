@@ -58,7 +58,9 @@ Options:
 | Output File | Description |
 | --- | --- |
 |`concat_IDs`|sequence ID of putative concatemeric reads (useful for `seqtk subseq file.fastq **concat_IDs** > conc.fastq` )|
-|`concat_count.tab`||
-|`coords (folder)`||
-|`short.txt`||
-|`stats.txt`||
+|`coords (folder)`| Folder with all nucmer coord alignments|
+|`short.txt`| IDs of reads detected as short and skipped by the pipeline|
+|`stats.txt`| File statistics of the CADET pipeline|
+|`Non_conc.fastq`|fastq/fasta file containing non-concatemeric reads|
+|`Conc.fastq`|fastq/fasta file containing putative concatemeric reads|
+|`Short.fastq`|fastq/fasta file containing short reads|
