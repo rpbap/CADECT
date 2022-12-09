@@ -72,7 +72,7 @@ Options:
 
 Short sequences:                          1   
 
-Number of non-concatemer detected:        3   -------> `# of non_Concatemer + short sequences`
+Number of non-concatemer detected:        2   `
 
 Number of putative concatemer detected:   1   
 
