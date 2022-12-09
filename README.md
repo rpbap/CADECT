@@ -71,9 +71,13 @@ Options:
 ### stats output example
 
 Short sequences:                          1   
+
 Number of non-concatemer detected:        3   -------> `# of non_Concatemer + short sequences`
+
 Number of putative concatemer detected:   1   
+
 Total number of Reads:                    4   
+
 `###` putative concatemers `###`
 
 read_number     read_ID self_alignemts
