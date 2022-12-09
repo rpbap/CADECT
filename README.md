@@ -6,14 +6,15 @@ Whole Genome Amplification using multiple displacement amplification (MDA) somet
 
 <p align="center">
   
-<img width="350" height="350" alt="concatemer" src="https://user-images.githubusercontent.com/28576450/206510156-341b185c-b284-41a2-9937-484a46f24266.png">
+<img width="400" height="300" alt="CADET_AI" src="https://user-images.githubusercontent.com/28576450/206807841-2de5a0b3-4e00-460a-aaf1-34576894bf85.png">
+
 
 </p>
 
-**Figure. Concatemer-Mediated Multiple Displacement Amplification.** The principle of concatemer mediated multiple displacement amplification. 1-Religation of DNA fragments with T4 DNA ligase, which leads to two types of products, 2.1-Linear Concatemers and 2.2-Circular Concatemers. 3.1 and 3.2-Annealing of random hexamer primers and addition of phi29-DNA polymerase leads to concatemers-mediated multiple displacement amplification from linear and circular concatemers respectively. [Shoaib et al., 2008](https://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-9-415).
+**Figure. Concatemer-Mediated Multiple Displacement Amplification.** Annealing of random hexamer primers and addition of phi29-DNA polymerase leads to concatemers-mediated multiple displacement amplification from *(A)* linear and *(B)* circular concatemers respectively.  [Shoaib et al., 2008](https://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-9-415).
 
 ## How it works?
-It splits all reads in separate files to perform sliding windows with the user prefered size and the gap between these windows. For ONT amplified reads, we suggest windows >= 500bp with no overlaps (e.g. <window size> = 500 and <slide size> = 500). If the read is not able to generate more than one window (< 1kb in size in the 500bp window example) the read is skipped and its ID stored in the short.txt output file. Reads with more than two windows, will have their fragment windows aligned using nucmer and reads with overlaps are reported in stats and their IDs stored in the concat_ID output file. Statistics with the total number of reads, number of putative concatemers, number with no concatemer detection and the overlap frequency can be found in the stats.txt output.
+It splits all reads in separate files to perform sliding windows with the user prefered size and the gap between these windows. For ONT amplified reads, we suggest windows >= 500bp with no overlaps (e.g. `-w 500` and `-s 500`). If the read is not able to generate more than one window (< 1kb in size in the 500bp window example) the read is skipped and its ID stored in the short.txt output file. Reads with more than two windows, will have their fragment windows aligned using nucmer and reads with overlaps are reported in stats and their IDs stored in the concat_ID output file. Statistics with the total number of reads, number of putative concatemers, number with no concatemer detection and the overlap frequency can be found in the stats.txt output.
 
   
 ### Workflow
