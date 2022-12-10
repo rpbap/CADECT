@@ -35,8 +35,11 @@ Software Requirements:
 
 - Seqtk v1.3
 
+###Easy install
 ```
-mamba create -n cadet -c bioconda -c conda-forge mummer seqtk 
+mamba create -n cadect -c bioconda -c conda-forge mummer seqtk 
+conda activate cadect
+git clone https://github.com/rpbap/CADECT.git
 ```
 
 ## Usage
