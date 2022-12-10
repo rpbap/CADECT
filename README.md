@@ -29,13 +29,14 @@ Fastq/Fasta files with the characterized reads will also be generated.
 
 ## Instalation
 
-Software Requirements:
+**Software Requirements:**
 
 - Mummer v3.23
 
 - Seqtk v1.3
 
-###Easy install
+**Easy install unisng conda/mamba**
+
 ```
 mamba create -n cadect -c bioconda -c conda-forge mummer seqtk 
 conda activate cadect
