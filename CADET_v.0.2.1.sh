@@ -175,6 +175,7 @@ do
       echo ">>> Sequence is too short to create more than 2 windows using the specified parameters. SequenceID will be stored at short.txt"
       echo $seqName >> $SAMPLE/short.txt
       cat $SAMPLE/short.txt | wc -l| awk '{print "Short sequences:\t"$0}' >> $SAMPLE/stats.txt
+      short=$(cat $SAMPLE/short.txt | wc -l)
       continue
   else
       echo ">>> Creating" $total "windows"
@@ -220,7 +221,10 @@ done
 ## Parse Results and build Stats file
 
 more $SAMPLE/concat_count.tab | awk -F'\t' 'NR>0{$0=$0"\t"NR-1} 1'| awk '{print "window_"$2+1"\t"$1/2}'| awk '{if ($2 != 0) print $0}' > Concat_Final.tab
-more $SAMPLE/concat_count.tab | awk -F'\t' 'NR>0{$0=$0"\t"NR-1} 1'| awk '{print "window_"$2+1"\t"$1}'| awk '{if ($2 ==0) print $2}'| wc -l| awk '{print "Number of non-concatemer detected: "$0}' >> $SAMPLE/stats.txt 
+#more $SAMPLE/concat_count.tab | awk -F'\t' 'NR>0{$0=$0"\t"NR-1} 1'| awk '{print "window_"$2+1"\t"$1}'| awk '{if ($2 ==0) print $2}'| wc -l| awk '{print "Number of non-concatemer detected: "$0}' >> $SAMPLE/stats.txt 
+nconc=$(more $SAMPLE/concat_count.tab | awk -F'\t' 'NR>0{$0=$0"\t"NR-1} 1'| awk '{print "window_"$2+1"\t"$1}'| awk '{if ($2 ==0) print $2}'| wc -l)
+count=$(expr $nconc - $short)
+echo "Number of non-concatemer detected: "$count >> $SAMPLE/stats.txt
 more $SAMPLE/concat_count.tab | awk -F'\t' 'NR>0{$0=$0"\t"NR-1} 1'| awk '{print "window_"$2+1"\t"$1}'| awk '{if ($2 !=0) print $2}'| wc -l| awk '{print "Number of putative concatemer detected: "$0}' >> $SAMPLE/stats.txt
 grep -c ">" input.fa | awk '{print "Total number of Reads:\t"$0"\n### putative concatemers ###\nread_number\tread_ID\tself_alignemts"}' >> $SAMPLE/stats.txt
 join window_read_ID.txt Concat_Final.tab >> $SAMPLE/stats.txt
