@@ -64,7 +64,7 @@ Options:
 |`coords (folder)`| Folder with all nucmer coord alignments|
 |`short.txt`| IDs of reads detected as short and skipped by the pipeline|
 |`stats.txt`| File statistics of the CADET pipeline|
-|`Non_conc.fastq`|fastq/fasta file containing non-concatemeric reads *(ecludes short reads)*|
+|`Non_conc.fastq`|fastq/fasta file containing non-concatemeric reads *(excludes short reads)*|
 |`Conc.fastq`|fastq/fasta file containing putative concatemeric reads|
 |`Short.fastq`|fastq/fasta file containing short reads|
 
