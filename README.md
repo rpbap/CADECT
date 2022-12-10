@@ -41,7 +41,7 @@ mamba create -n cadet -c bioconda -c conda-forge mummer seqtk
 
 ## Usage
 ```
-../CADECT_v.0.2.1.sh [OPTIONS] -R <Reads.fastq> -w <window size> -s <slide size> -p <your_prefix>
+./CADECT_v.0.2.1.sh [OPTIONS] -R <Reads.fastq> -w <window size> -s <slide size> -p <your_prefix>
 
 Flag description:
 
@@ -51,7 +51,7 @@ Required:
 Options: 
     -w  --window    length of desired window sequences in bp (required) (default = 500)
     -s  --slide     length to slide each window over in bp (required) (default = 500)
-    -p  --prefix    Prefix name for your output folder (default = "CADET_output")  
+    -p  --prefix    Prefix name for your output folder (default = "CADECT_output")  
     -h  --help      display this message
 
 *Note: if using a FASTA file as input, the Concat.fastq output will be in fasta format
@@ -63,7 +63,7 @@ Options:
 |`concat_IDs`|sequence ID of putative concatemeric reads|
 |`coords (folder)`| Folder with all nucmer coord alignments|
 |`short.txt`| IDs of reads detected as short and skipped by the pipeline|
-|`stats.txt`| File statistics of the CADET pipeline|
+|`stats.txt`| File statistics of the CADECT pipeline|
 |`Non_conc.fastq`|fastq/fasta file containing non-concatemeric reads|
 |`Conc.fastq`|fastq/fasta file containing putative concatemeric reads|
 |`Short.fastq`|fastq/fasta file containing short reads|
