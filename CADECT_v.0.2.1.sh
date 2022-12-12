@@ -131,7 +131,7 @@ inFasta=$fasta
 inW=$W
 inS=$S
 n=$(<nseq.txt)
-$n=$nseq
+#$n=$nseq
 
 ## Remove already existing result file
 final_name=$(paste -d '_' \
