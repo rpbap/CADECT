@@ -84,13 +84,14 @@ Total number of Reads:                    9
 
 `###` putative concatemers `###`
 
-read_number     read_ID self_alignemts
-               
-window_4 d159b5a3-ee3b-4cc4-92ad-1422bf7a5a28 17.5  -------> `read_number (useful for coords)` `read_name` `#_of_potential_concatemer_repeats`
-window_5 159ffb63-2583-4a7d-88a5-639111d4fe99 104
-window_6 6d5ce662-395e-4af2-a68c-37015af5913b 54
-window_8 b8194fa6-aa7b-4017-bd55-5538b8f31039 142.5
-window_9 a6b76c03-832a-47a1-bb80-0a57b862118a 9
+| read_number *(useful for coords)* | read_ID | self_alignemts |
+| --- | --- | ---|
+|window_4|d159b5a3-ee3b-4cc4-92ad-1422bf7a5a28|17.5|  
+|window_5|159ffb63-2583-4a7d-88a5-639111d4fe99|104|
+|window_6|6d5ce662-395e-4af2-a68c-37015af5913b|54|
+|window_8|b8194fa6-aa7b-4017-bd55-5538b8f31039|142.5|
+|window_9|a6b76c03-832a-47a1-bb80-0a57b862118a|9|
+
 
 ## Acknowledgements
 
