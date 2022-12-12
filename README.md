@@ -41,6 +41,8 @@ Fastq/Fasta files with the characterized reads will also be generated.
 mamba create -n cadect -c bioconda -c conda-forge mummer seqtk 
 conda activate cadect
 git clone https://github.com/rpbap/CADECT.git
+cd CADECT
+chmod a+x CADECT_v.0.2.1.sh
 ```
 
 ## Usage
