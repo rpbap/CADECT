@@ -174,7 +174,7 @@ do
   then
       echo ">>> Sequence is too short to create more than 2 windows using the specified parameters. SequenceID will be stored at short.txt"
       echo $seqName >> $SAMPLE/short.txt
-      cat $SAMPLE/short.txt | wc -l| awk '{print "Short sequences:\t"$0}' >> $SAMPLE/stats.txt
+      cat $SAMPLE/short.txt | wc -l| awk '{print "Short sequences:\t"$0}' > $SAMPLE/stats.txt
       short=$(cat $SAMPLE/short.txt | wc -l)
       continue
   else
