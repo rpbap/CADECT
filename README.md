@@ -91,4 +91,4 @@ window_1  Long-sequence-one  3                -------> `read_number (useful for 
 
 ## Acknowledgements
 
- 
+The sliding window logic was made as a modification from [Kim Dill-McFarland, UW 2020](https://github.com/kdillmcfarland/sliding_windows).
