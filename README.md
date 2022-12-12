@@ -74,7 +74,7 @@ Options:
 |`Conc.fastq`|fastq/fasta file containing putative concatemeric reads|
 |`Short.fastq`|fastq/fasta file containing short reads|
 
-### stats output example
+### Stats.txt output from provided example
 
 Short sequences:                          2   
 
