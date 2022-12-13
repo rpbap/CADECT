@@ -217,7 +217,7 @@ more $SAMPLE/window_$j.coords| sed 's/|/\t/g' |grep -v "NUCMER\|TAGS\|=="|cut -f
 more $SAMPLE/window_$j.coords| sed 's/|/\t/g' |grep -v "NUCMER\|TAGS\|=="|cut -f5,6| awk '{if ($1 != $2) print $0}'| wc -l| sed 's/ //g' >> $SAMPLE/concat_count.tab
 
 done
-
+echo "> ALIGNMENTS FINISHED"
 ## Parse Results and build Stats file
 
 more $SAMPLE/concat_count.tab | awk -F'\t' 'NR>0{$0=$0"\t"NR-1} 1'| awk '{print "window_"$2+1"\t"$1/2}'| awk '{if ($2 != 0) print $0}' > Concat_Final.tab
@@ -231,7 +231,7 @@ join window_read_ID.txt Concat_Final.tab >> $SAMPLE/stats.txt
 join window_read_ID.txt Concat_Final.tab | sed 's/ /\t/g'| cut -f 2 > $SAMPLE/concat_IDs
 
 ## Make fastq/fasta  output files
-
+echo "> Generating fastq Files"
 seqtk subseq $GENOME $SAMPLE/concat_IDs > $SAMPLE/Conc.fastq
 cat input.fa | grep ">" | sed 's/>//' > in.fasta.readsID
 cat $SAMPLE/concat_IDs $SAMPLE/short.txt > $SAMPLE/conc_shortIDs
