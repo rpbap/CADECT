@@ -235,13 +235,20 @@ echo "> Generating fastq Files"
 seqtk subseq $GENOME $SAMPLE/concat_IDs > $SAMPLE/Conc.fastq
 cat input.fa | grep ">" | sed 's/>//' > in.fasta.readsID
 cat $SAMPLE/concat_IDs $SAMPLE/short.txt > $SAMPLE/conc_shortIDs
-grep -f  $SAMPLE/conc_shortIDs in.fasta.readsID -v > remaining.list
+##taking too long##
+#grep -f  $SAMPLE/conc_shortIDs in.fasta.readsID -v > remaining.list
+##fasterway
+more $SAMPLE/conc_shortIDs| sed 's/ /\t/g'|cut -f1 > conc_shortIDs2
+more in.fasta.readsID| sed 's/ /\t/g'|cut -f1 > in.fasta.readsID2
+comm -23 <(sort in.fasta.readsID2) <(sort conc_shortIDs2) > remaining.list
+##
 seqtk subseq $GENOME remaining.list > $SAMPLE/Non_conc.fastq
 seqtk subseq $GENOME $SAMPLE/short.txt > $SAMPLE/Short.fastq
 mv remaining.list $SAMPLE/non_concatIDs
 
 ## Remove intermediate files
-
+rm in.fasta.reads2
+rm conc_shortIDs2
 rm in.fasta.readsID
 rm Concat_Final.tab
 rm window_read_ID.txt
