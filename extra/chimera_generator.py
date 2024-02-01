@@ -3,15 +3,28 @@ import random
 from Bio import SeqIO
 
 def generate_chimeric_read(sequence):
+    min_length = 1000
     length = len(sequence)
-    split_point = random.randint(1, length - 1)
-    chimeric_read = sequence[:split_point] + sequence[split_point:][::-1]
+    
+    # Determine the number of times to repeat the inversion
+    num_inversions = random.randint(1, length // min_length)
+    
+    # Generate chimeric read
+    inverted_segments = [sequence]  # Start with the original sequence
+    for _ in range(num_inversions):
+        # Invert the last segment and append it to the list
+        inverted_segments.append(inverted_segments[-1][::-1])
+    
+    # Concatenate all segments to form the chimeric read
+    chimeric_read = "".join(inverted_segments)
     return chimeric_read
 
 def generate_random_chimeric_reads(sequences, num_reads):
     chimeric_reads = []
     for _ in range(num_reads):
         random_sequence = random.choice(sequences)
+        if len(random_sequence) < 1000:
+            continue
         chimeric_reads.append(generate_chimeric_read(random_sequence))
     return chimeric_reads
 
