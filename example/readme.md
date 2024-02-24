@@ -1,3 +1,3 @@
 **Running example file**
 
-`./CADECT_v.0.2.1.sh -R ../example.fastq`
+`python CADECT_v1-0-0.py -R example.fastq`-o example_test -w 500
