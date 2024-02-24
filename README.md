@@ -1,7 +1,5 @@
 # CADECT v1.0.0
-Concatemer by Amplification DEteCtion Tool V1.0.0
-
-*Developed by Rodrigo P. Baptista*
+## Concatemer by Amplification DEteCtion Tool
 
 Whole Genome Amplification using multiple displacement amplification (MDA) sometimes can introduce potential false concatemer sequences that can affect whole genome assembly assays. Here we propose a Concatemer detection tool for those WGA assays.
 
@@ -82,4 +80,8 @@ Options:
 
 ## Cite us
 
-- Agyabeng-Dadzie *et al.* (2024) "Evaluating the benefits and limits of multiple displacement amplification with whole-genome Oxford Nanopore Sequencing." [bioRxiv](https://www.biorxiv.org/content/10.1101/2024.02.09.579537v1). https://doi.org/10.1101/2024.02.09.579537.
+- Agyabeng-Dadzie *et al.* (2024) "Evaluating the benefits and limits of multiple displacement amplification with whole-genome Oxford Nanopore Sequencing." [bioRxiv](https://www.biorxiv.org/content/10.1101/2024.02.09.579537v1).
+
+## Developers
+- Rodrigo P. Baptista, PhD [link](https://www.houstonmethodist.org/faculty/rodrigo-de-paula-baptista/)
+
