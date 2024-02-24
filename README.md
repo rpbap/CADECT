@@ -78,6 +78,18 @@ Options:
 |b8194fa6-aa7b-4017-bd55-5538b8f31039|putative_concatemers|28|84|
 |a6b76c03-832a-47a1-bb80-0a57b862118a|putative_concatemers|19|7|
 
+
+## Impotant information
+
+- The current version uses Bio.pairwise2 for the global alignment which has been deprecaded in biopython. We are currently working to update the global aligner to something like Bio.Align.PairwiseAligner in a future version. So if the message below appears in your run the pipeline is still working it is just a warning message.
+
+```
+...python3.12/site-packages/Bio/pairwise2.py:278: BiopythonDeprecationWarning: Bio.pairwise2 has been deprecated, and we intend to remove it in a future release of Biopython. As an alternative, please consider using Bio.Align.PairwiseAligner as a replacement, and contact the Biopython developers if you still need the Bio.pairwise2 module.
+  warnings.warn(`
+```
+- Useful command line to get the global stats from the classification table:
+```cat classification_table.txt| cut -f 2| sort| uniq -c ```
+
 ## Cite us
 
 - Agyabeng-Dadzie *et al.* (2024) "Evaluating the benefits and limits of multiple displacement amplification with whole-genome Oxford Nanopore Sequencing." [bioRxiv](https://www.biorxiv.org/content/10.1101/2024.02.09.579537v1).
