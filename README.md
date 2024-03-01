@@ -63,7 +63,8 @@ Options:
 |`classification_table.txt`| File statistics of the CADECT pipeline|
 |`non_concatemers.fastq`|fastq/fasta file containing non-concatemeric reads|
 |`putative_concatemers.fastq`|fastq/fasta file containing putative concatemeric reads|
-|`Short.fastq`|fastq/fasta file containing short reads|
+|`short.fastq`|fastq/fasta file containing short reads|
+|`progress.log`|Classification progress report|
 
 ### classification_table.txt output from provided example
 
@@ -95,8 +96,8 @@ Options:
 
 | **Total number of reads** | **Cumulative read length** |  **Processing time**|
 | --- | --- | --- |
-| 1000 | | ~213 seconds|
-| 40000| | ~13 hours|
+| 1000 reads | | ~213 seconds|
+| 40000 reads| | ~13 hours|
 
 ###### *We are working to get a multithread function to boost time, in the meanwhile we are providing a fasta/fastq parser script under extras to split your input file to make the user able to submit multiple jobs and boost the run time*
 
