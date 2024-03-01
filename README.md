@@ -98,7 +98,7 @@ Options:
 | 1000 reads | | ~213 seconds|
 | 40000 reads| | ~13 hours|
 
-###### *We are working to get a multithread function to boost time, in the meanwhile we are providing a fasta/fastq parser script under extras to split your input file to make the user able to submit multiple jobs and boost the run time*
+###### *We are working to get a multithread function to boost time, in the meanwhile, we are providing a fasta/fastq parser script under extras (split_input.py) to split your input file into subsets to make the user able to submit multiple jobs and boost the run time*
 
 ## Cite us
 
