@@ -1,6 +1,5 @@
-# CADECT 
+# CADECT - Concatemer by Amplification DEteCtion Tool
 *version 1.0.1*
-## Concatemer by Amplification DEteCtion Tool
 
 Whole Genome Amplification using multiple displacement amplification (MDA) sometimes can introduce potential false concatemer sequences that can affect whole genome assembly assays. Here we propose a Concatemer detection tool for those WGA assays.
 
@@ -83,7 +82,7 @@ Options:
 
 ## Impotant information
 
-- The current version uses Bio.pairwise2 for the global alignment which has been deprecaded in biopython. We are currently working to update the global aligner to something like Bio.Align.PairwiseAligner in a future version. So if the message below appears in your run the pipeline is still working it is just a warning message.
+- The current version uses Bio.pairwise2 for the global alignment which has been deprecated in Biopython. We are currently working to update the global aligner to something like Bio.Align.PairwiseAligner in a future version. So if the message below appears in your run the pipeline, don't worry, it is still working (just a warning message).
 
 ```
 ...python3.12/site-packages/Bio/pairwise2.py:278: BiopythonDeprecationWarning: Bio.pairwise2 has been deprecated, and we intend to remove it in a future release of Biopython. As an alternative, please consider using Bio.Align.PairwiseAligner as a replacement, and contact the Biopython developers if you still need the Bio.pairwise2 module.
