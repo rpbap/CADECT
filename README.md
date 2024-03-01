@@ -1,4 +1,5 @@
-# CADECT v1.0.0
+# CADECT 
+*version 1.0.1*
 ## Concatemer by Amplification DEteCtion Tool
 
 Whole Genome Amplification using multiple displacement amplification (MDA) sometimes can introduce potential false concatemer sequences that can affect whole genome assembly assays. Here we propose a Concatemer detection tool for those WGA assays.
@@ -89,6 +90,15 @@ Options:
 ```
 - Useful command line to get the global stats from the classification table:
 ```cat classification_table.txt| cut -f 2| sort| uniq -c ```
+
+## Compute time test
+
+| **Total number of reads** | **Cumulative read length** |  **Processing time**|
+| --- | --- | --- |
+| 1000 | | ~213 seconds|
+| 40000| | ~13 hours|
+
+###### *We are working to get a multithread function to boost time, in the meanwhile we are providing a fasta/fastq parser script under extras to split your input file to make the user able to submit multiple jobs and boost the run time*
 
 ## Cite us
 
