@@ -93,10 +93,16 @@ Options:
 
 ## Compute time test
 
-| **Total number of reads** | **Cumulative read length** |  **Processing time**|
-| --- | --- | --- |
-| 1000 reads | | ~213 seconds|
-| 40000 reads| | ~13 hours|
+| **Total number of reads** | **Cumulative read length** |  **Processing time**| **OS tested**|
+| --- | --- | --- | --- |
+| 1,000 reads| 4,099,269 bp| 108.46 seconds| MacOS Ventura|
+| 1,000 reads | 6,439,871 bp| ~1,106 seconds|Ubuntu 22.04|
+| 40,000 reads| 261,519,967 bp| ~13 hours (48,614.17 seconds)| Ubuntu 22.04|
+
+*Computer specs tested:* 
+  * *OS: Ubuntu 22.04; MacOS Ventura 13.3.1*
+  * *Memory: 64GiB*
+  * *Processor: Intel Xeon(R) CPU @ 3.90GHz x 16; Apple M1 Max*
 
 ###### *We are working to get a multithread function to boost time, in the meanwhile, we are providing a fasta/fastq parser script under extras (split_input.py) to split your input file into subsets to make the user able to submit multiple jobs and boost the run time*
 
