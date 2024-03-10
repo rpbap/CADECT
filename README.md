@@ -96,6 +96,7 @@ Options:
 | **Total number of reads** | **Cumulative read length** |  **Processing time**| **OS tested**|
 | --- | --- | --- | --- |
 | 1,000 reads| 4,099,269 bp| ~109 seconds| MacOS Ventura|
+| 40,000 reads |47,837,224 bp| ~ 486 seconds| MacOS Ventura|
 | 1,000 reads | 6,439,871 bp| ~1,106 seconds|Ubuntu 22.04|
 | 40,000 reads| 261,519,967 bp| ~13 hours (48,614.17 seconds)| Ubuntu 22.04|
 
