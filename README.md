@@ -30,7 +30,7 @@ It splits all reads in separate files to perform sliding windows with the user p
 
 **Requirements:**
 
-- Python3
+- Python3.6 or higher
 
 - BioPython v1.83 (tested)
 
